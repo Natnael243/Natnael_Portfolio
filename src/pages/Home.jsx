@@ -5,8 +5,8 @@ const HomePage = () => {
     <div className="">
       <section className="pt-24 bg-gradient-to-b from-blue-950 via-blue-600 to-blue-500">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid max-w-md grid-cols-1 mx-auto lg:grid-cols-12 gap-x-6 gap-y-8 lg:max-w-none">
-            <div className="self-center lg:col-span-4">
+          <div className="grid max-w-md grid-cols-1 mx-auto lg:grid-cols-10 gap-x-6 gap-y-8 lg:max-w-none">
+            <div className="self-center lg:col-span-4 order-2 lg:order-1">
               <h1 className="text-3xl font-bold text-shadow-white sm:text-4xl xl:text-5xl">
                 I'm Natnael Zelalem <br />Full Stack Developer.
               </h1>
@@ -27,12 +27,13 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="self-end lg:col-span-5">
+            <div className="self-end lg:col-span-5 order-1 lg:order-2">
               <img
                 className="w-full mx-auto"
                 src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/1/author.png"
-                alt=""
+                alt="Natnael Zelalem"
               />
+              
             </div>
           </div>
         </div>
