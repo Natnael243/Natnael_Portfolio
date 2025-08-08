@@ -3,8 +3,9 @@ import "./index.css";
 import Navbar from "./components/Navbar.jsx";
 import { Routes, Route } from "react-router-dom";
 import Hero from "./components/Hero.jsx";
-import About from "./components/About.jsx";
+import About from "./components/Projects.jsx";
 import Timeline from "./components/Timeline.jsx";
+import HeroSection from "./components/another.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,7 +15,7 @@ function App() {
       <div className="min-h-screen w-full relative bg-gradient-to-r from-blue-900 to-blue-950 text-white">
         <Navbar />
         <main>
-          <Hero />
+          <HeroSection />
           <About />
           <Timeline />
         </main>

@@ -26,7 +26,7 @@ const projects = [
   },
 ];
 
-export default function About() {
+export default function Projects () {
   return (
     <div className="bg-gradient-to-b from-blue-500 via-blue-600 to-blue-950 py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

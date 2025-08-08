@@ -30,9 +30,9 @@ function App() {
   const timeline = [
     {
       icon: workIcon,
-      date: "2011 - present",
-      title: "Creative Director",
-      subtitle: "Miami, FL",
+      date: "2023 - present",
+      title: "Web Developer",
+      subtitle: "Fulltime",
       desc: "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
     },
     {
@@ -82,12 +82,14 @@ function App() {
 
   return (
     <div className="App">
-      <h3>
-        Create a vertical timeline component in React -{" "}
-        <a href="https://www.cluemediator.com/" target="_blank">
-          Clue Mediator
-        </a>
-      </h3>
+      <div className="mx-auto max-w-2xl lg:mx-0">
+          <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+            Timeline
+          </h2>
+          <p className="mt-2 text-lg text-gray-600">
+            A brief overview of my professional journey.
+          </p>
+        </div>
       <VerticalTimeline>
         {timeline.map((t, i) => {
           const contentStyle =
