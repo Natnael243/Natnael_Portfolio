@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Hero from "./components/Hero.jsx";
 import About from "./components/Projects.jsx";
 import Timeline from "./components/Timeline.jsx";
-import HeroSection from "./components/another.jsx";
+import HeroSection from "./components/Hero.jsx";
 
 function App() {
   const [count, setCount] = useState(0);

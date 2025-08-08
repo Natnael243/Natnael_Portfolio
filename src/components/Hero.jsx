@@ -3,10 +3,10 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 const HeroSection = () => {
   const [text] = useTypewriter({
     words: [
-      "Web Developer",
-      "Graphics Designer",
-      "OTA Coordinator",
-      "IT Specialist",
+      "Web Developer.",
+      "Graphics Designer.",
+      "OTA Coordinator.",
+      "IT Specialist.",
     ],
     loop: {},
     typeSpeed: 120,
@@ -20,9 +20,9 @@ const HeroSection = () => {
             <div className="self-center lg:col-span-4 order-2 lg:order-1">
               <h1 className="text-center text-3xl font-bold text-white sm:text-4xl xl:text-4xl">
                 Hey 👋 I am Natnael !<br />
-                <span className="text-center text-3xl font-bold text-lime-400 sm:text-4xl xl:text-4xl">
+                <span className="text-center text-3xl font-bold text-green-500 sm:text-4xl xl:text-4xl">
                   {text}
-                  <Cursor cursorColor="lime" />
+                  <Cursor cursorColor="green" />
                 </span>
               </h1>
               <p className="mt-5 text-base font-normal leading-7 text-white/80">
@@ -45,7 +45,7 @@ const HeroSection = () => {
               </div>
             </div>
 
-            <div className="self-end lg:order-last lg:pb-20 lg:col-span-3 order-3">
+            <div className="self-end lg:order-last lg:pb-20 lg:col-span-3 order-3 py-4">
               <p className="text-xs font-bold tracking-widest text-white/80 uppercase">
                 ⚡️ Latest projects
               </p>
