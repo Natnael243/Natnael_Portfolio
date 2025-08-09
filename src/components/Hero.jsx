@@ -113,7 +113,7 @@ const HeroSection = () => {
             <div className="self-end lg:col-span-5 order-1">
               <img
                 className="w-full mx-auto"
-                src="/assets/nhatty.png"
+                src="assets/nhatty.png"
                 alt=""
               />
             </div>
