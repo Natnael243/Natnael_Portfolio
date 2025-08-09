@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import nhatty from "/assets/nhatty.png";
+
 const HeroSection = () => {
   const [text] = useTypewriter({
     words: [
@@ -28,7 +30,8 @@ const HeroSection = () => {
               <p className="mt-5 text-base font-normal leading-7 text-white/80">
                 I create beautiful and functional web applications that provide
                 an exceptional user experience. My passion for coding and design
-                drives me to deliver high-quality solutions tailored to your needs.
+                drives me to deliver high-quality solutions tailored to your
+                needs.
               </p>
               <div className="relative inline-flex mt-9 group">
                 <div className="absolute transitiona-all duration-1000 opacity-70 inset-0 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"></div>
@@ -60,7 +63,8 @@ const HeroSection = () => {
                     />
                     <p className="ml-5 text-base font-bold leading-6 text-gray-900">
                       <a href="#" title="">
-                        Nib Tech Solution በቅርቡ ወደስራ የሚገባ በ React እና tailwind CSS የተሰራ ድህረገጽ።
+                        Nib Tech Solution በቅርቡ ወደስራ የሚገባ በ React እና tailwind CSS
+                        የተሰራ ድህረገጽ።
                         <span
                           className="absolute inset-0"
                           aria-hidden="true"
@@ -111,11 +115,7 @@ const HeroSection = () => {
             </div>
 
             <div className="self-end lg:col-span-5 order-1">
-              <img
-                className="w-full mx-auto"
-                src="public/assets/nhatty.png"
-                alt=""
-              />
+              <img className="w-full mx-auto" src={nhatty} alt="Nhatty" />
             </div>
           </div>
         </div>
