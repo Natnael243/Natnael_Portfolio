@@ -72,7 +72,7 @@ function Timeline() {
     {
       icon: schoolIcon,
       date: "August 2017",
-      title: "Java Fundamental Programming" ,
+      title: "Java Fundamental Programming",
       subtitle: "Certification, Virtual Computer Engineering Institute",
       desc: "Basic understanding of Java programming language, including syntax, data types, control structures, and functions.",
     },
@@ -88,15 +88,15 @@ function Timeline() {
   ];
 
   return (
-    <div className="w-full px-4 py-12 bg-gradient-to-b from-black via-blue-950 to-blue-600">
+    <div className="w-full px-4 py-24  bg-gradient-to-b from-black via-blue-950 to-blue-600">
       <div className="pb-12 mx-auto max-w-2xl lg:mx-100">
-          <h2 className="text-center text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            My Journey 
-          </h2>
-          <p className="text-center mt-2 text-white/80">
-            A timeline of my professional and educational experiences.
-          </p>
-        </div>
+        <h2 className="text-center text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+          My Journey
+        </h2>
+        <p className="text-center mt-2 text-white/80">
+          A timeline of my professional and educational experiences.
+        </p>
+      </div>
       <VerticalTimeline>
         {timeline.map((t, i) => {
           // Card background and text color
