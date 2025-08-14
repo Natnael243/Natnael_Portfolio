@@ -1,6 +1,6 @@
 # React Portfolio
 
-This is a personal portfolio website built with React. It showcases my projects, skills, and contact information.
+A modern, responsive personal portfolio website built with React. This project allows me to showcase my work, highlight my skills, and provide contact information for potential collaborators or employers.
 
 ## Features
 
@@ -35,4 +35,4 @@ This is a personal portfolio website built with React. It showcases my projects,
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [MIT License].

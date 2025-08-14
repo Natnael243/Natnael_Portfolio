@@ -97,7 +97,7 @@ function Timeline() {
           My Journey
         </h2>
         <p className="text-center mt-2 text-white/80">
-          A timeline of my professional and educational experiences.
+          A timeline of my professional and educational experiences, showcasing my growth and achievements in the field of computer science.
         </p>
       </div>
 
