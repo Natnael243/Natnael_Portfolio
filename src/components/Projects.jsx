@@ -8,7 +8,7 @@ const projects = [
     description:
       "A modern company website for SWAJ Trading PLC, showcasing their services and products. It features a responsive design and is built with HTML5 and Bootstrap.",
     techStack: "React, Tailwind CSS",
-    github: "https://github.com/yourusername/react-portfolio",
+    github: "https://github.com/yourusername/Natnael_Portfolio",
     live: "https://swajtrading.com/",
   },
   {
@@ -27,7 +27,7 @@ const projects = [
       "A personal portfolio website to showcase my skills and projects. It includes a project section and a contact form. It is built with React and Tailwind CSS. It is responsive and has a modern design.",
     techStack: "Node.js, MongoDB, React",
     github: "https://github.com/yourusername/blog-platform",
-    live: "https://natnael243.github.io/React-Portfolio/",
+    live: "https://natnael243.github.io/Natnael_Portfolio/",
   },
 ];
 

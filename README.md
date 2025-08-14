@@ -13,8 +13,8 @@ This is a personal portfolio website built with React. It showcases my projects,
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/Natnael243/react-portfolio.git
-    cd react-portfolio
+    git clone https://github.com/Natnael243/Natnael_Portfolio.git
+    cd Natnael_Portfolio
     ```
 
 2. **Install dependencies:**
