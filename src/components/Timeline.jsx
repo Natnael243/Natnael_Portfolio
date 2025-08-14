@@ -5,18 +5,14 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBriefcase,
-  faSchool,
-  faStar,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faSchool, faStar } from "@fortawesome/free-solid-svg-icons";
 
-// Custom colors to match other components (assuming accent colors)
+// Custom colors
 const COLORS = {
   work: "#2563eb", // blue-600
   school: "#db2777", // pink-600
   star: "#10b981", // emerald-500
-  cardBg: "white",
+  cardBg: "#f8fafc", // slate-50
   cardText: "#1e293b", // slate-800
   border: "#e5e7eb", // gray-200
 };
@@ -50,6 +46,12 @@ function Timeline() {
   const timeline = [
     {
       icon: workIcon,
+      date: "Jun 2025 - Present",
+      title: "Alarm Monitoring Specialist",
+      subtitle: "Koppa Smart Security",
+      desc: "Monitoring and managing alarm systems, ensuring prompt response to security breaches, and maintaining system integrity.",
+    },{
+      icon: workIcon,
       date: "Apr 2024 - May 2025",
       title: "Web Developer",
       subtitle: "Lebawi Net Trading PLC",
@@ -60,7 +62,7 @@ function Timeline() {
       date: "Dec 2023 - Mar 2024",
       title: "Financial IT Support",
       subtitle: "Purpuse Black Ethiopia",
-      desc: " Check customers finished their payment for their goods, Built Excel to check the transaction, Approve item invoices to be delivered to customers.",
+      desc: "Check customers finished their payment for their goods, built Excel to check the transaction, approved item invoices to be delivered to customers.",
     },
     {
       icon: schoolIcon,
@@ -83,13 +85,14 @@ function Timeline() {
       subtitle: "BSc Degree, Microlink IT College",
       desc: "Graduated with a BSc in Computer Science from Microlink IT College, focusing on software development, algorithms, and data structures.",
     },
-
-    { icon: starIcon },
+    {
+      icon: starIcon,
+    },
   ];
 
   return (
-    <div className="w-full px-4 py-24  bg-gradient-to-b from-black via-blue-950 to-blue-600">
-      <div className="pb-12 mx-auto max-w-2xl lg:mx-100">
+    <div className="w-full px-4 py-12 pb-0 bg-gradient-to-b from-indigo-700 via-purple-900 to-black">
+      <div className="pb-12 mx-auto max-w-2xl lg:mx-auto">
         <h2 className="text-center text-4xl font-semibold tracking-tight text-white sm:text-5xl">
           My Journey
         </h2>
@@ -97,9 +100,9 @@ function Timeline() {
           A timeline of my professional and educational experiences.
         </p>
       </div>
+
       <VerticalTimeline>
         {timeline.map((t, i) => {
-          // Card background and text color
           const contentStyle = {
             background: COLORS.cardBg,
             color: COLORS.cardText,
@@ -108,30 +111,23 @@ function Timeline() {
             border: `1px solid ${COLORS.border}`,
             padding: "2rem",
           };
-          // Accent for first element
-          if (i === 0) {
-            contentStyle.background = COLORS.work;
-            contentStyle.color = "#fff";
-            contentStyle.boxShadow = "0 8px 32px 0 rgba(33,150,243,0.12)";
-            contentStyle.border = "none";
-          }
+
           const arrowStyle = {
-            borderRight: `7px solid ${i === 0 ? COLORS.work : COLORS.border}`,
+            borderRight: `7px solid ${COLORS.border}`,
           };
 
           return (
             <VerticalTimelineElement
               key={i}
-              className="vertical-timeline-element--work"
               contentStyle={contentStyle}
               contentArrowStyle={arrowStyle}
               date={t.date}
-              dateClassName="font-semibold text-slate-500"
+              dateClassName="font-bold text-lg text-white"
               {...t.icon}
               iconClassName="shadow-lg"
             >
               {t.title ? (
-                <React.Fragment>
+                <>
                   <h3 className="vertical-timeline-element-title text-xl font-bold mb-1">
                     {t.title}
                   </h3>
@@ -140,10 +136,8 @@ function Timeline() {
                       {t.subtitle}
                     </h4>
                   )}
-                  {t.desc && (
-                    <p className="text-slate-700 text-base">{t.desc}</p>
-                  )}
-                </React.Fragment>
+                  {t.desc && <p className="text-amber-800 text-base">{t.desc}</p>}
+                </>
               ) : (
                 <div className="flex items-center justify-center h-12">
                   <span className="text-emerald-500 font-bold text-lg">

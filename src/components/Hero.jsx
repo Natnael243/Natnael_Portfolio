@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import nhatty from "/assets/nhatty.png";
+import SocialMedia from "./socal_icons/Horizontal";
+import Vertical from "./socal_icons/Vertical";
 
 const HeroSection = () => {
   const [text] = useTypewriter({
@@ -16,11 +18,11 @@ const HeroSection = () => {
   });
   return (
     <div className="">
-      <section className="pt-24 bg-gradient-to-b from-black via-blue-950 to-blue-600">
+      <section className="pt-24  from-indigo-700 via-purple-900 to-black bg-gradient-to-b">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid max-w-md grid-cols-1 mx-auto lg:grid-cols-12 gap-x-6 gap-y-8 lg:max-w-none">
             <div className="self-center lg:col-span-4 order-2 lg:order-1">
-              <h1 className="text-center text-3xl font-bold text-white sm:text-4xl xl:text-4xl">
+              <h1 className=" text-center text-3xl font-bold text-white sm:text-4xl xl:text-4xl">
                 Hey 👋 I am Natnael !<br />
                 <span className="text-center text-3xl font-bold text-green-500 sm:text-4xl xl:text-4xl">
                   {text}
@@ -49,28 +51,15 @@ const HeroSection = () => {
             </div>
 
             <div className="self-end lg:order-last lg:pb-20 lg:col-span-3 order-3 py-4">
-              <p className="text-xs font-bold tracking-widest text-white/80 uppercase">
-                ⚡️ Latest projects
-              </p>
-
               <div className="mt-6 space-y-6 lg:space-y-8">
-                <div className="relative overflow-hidden">
-                  <div className="flex items-start lg:items-center">
-                    <img
-                      className="object-cover w-12 h-12 rounded-lg shrink-0"
-                      src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/1/thumbnail-1.png"
-                      alt=""
-                    />
-                    <p className="ml-5 text-base font-bold leading-6 text-gray-900">
-                      <a href="#" title="">
-                        Nib Tech Solution በቅርቡ ወደስራ የሚገባ በ React እና tailwind CSS
-                        የተሰራ ድህረገጽ።
-                        <span
-                          className="absolute inset-0"
-                          aria-hidden="true"
-                        ></span>
-                      </a>
-                    </p>
+                <div className="relative overflow-hidden  hidden lg:block">
+                  <div className=" items-start lg:items-center flex">
+                    <SocialMedia />
+                  </div>
+                </div>
+                <div className="relative overflow-hidden  block lg:hidden">
+                  <div className=" items-start lg:items-center flex">
+                    <Vertical />
                   </div>
                 </div>
 
@@ -114,8 +103,17 @@ const HeroSection = () => {
               </div>
             </div>
 
-            <div className="self-end lg:col-span-5 order-1">
-              <img className="w-full mx-auto" src={nhatty} alt="Nhatty" />
+            <div className="self-end lg:col-span-5 order-1 relative">
+              <img
+                className="w-full mx-auto relative z-10"
+                src={nhatty}
+                alt="Nhatty"
+              />
+              {/* Fade overlay */}
+              <div
+                className="absolute bottom-0 left-0 w-full h-32 
+                  bg-gradient-to-b from-transparent to-black z-20"
+              ></div>
             </div>
           </div>
         </div>

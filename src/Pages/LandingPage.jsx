@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar.jsx";
 import HeroSection from "../components/Hero.jsx";
 import Projects from "../components/Projects.jsx";
 import Timeline from "../components/Timeline.jsx";
+import Footer from "../components/Footer.jsx";
+import GetInTouch from "../components/GetInTouch.jsx";
 
 const LandingPage = () => {
   return (
@@ -16,6 +18,9 @@ const LandingPage = () => {
       </section>
       <section id="timeline">
         <Timeline />
+      </section>
+      <section id="timeline">
+        <Footer />
       </section>
     </>
   );
