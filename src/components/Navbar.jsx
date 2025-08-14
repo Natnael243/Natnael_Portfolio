@@ -38,10 +38,10 @@ const Navbar = () => {
 
         {/* Contact Button (Desktop) */}
         <a
-          href="#contact"
+          href="https://t.me/NATAYN_1924"
           className="hidden md:block bg-gradient-to-r from-blue-500 to-green-400 py-1 px-5 rounded-4xl shadow-2xl text-white text-lg font-semibold hover:to-blue-600 hover:from-green-500 hover:shadow-fuchsia-950 shadow-blue-600"
         >
-          Contact
+         Hire Me
         </a>
 
         {/* Hamburger Icon (Mobile) */}
@@ -92,11 +92,11 @@ const Navbar = () => {
 
         {/* Contact Button */}
         <a
-          href="#contact"
+          href="https://t.me/NATAYN_1924"
           onClick={() => setMenuOpen(false)}
           className="bg-gradient-to-r from-blue-500 to-green-400 py-2 px-6 rounded-full shadow-2xl text-white text-base font-semibold hover:to-blue-600 hover:from-green-500 hover:shadow-fuchsia-950 shadow-blue-600"
         >
-          Contact
+          Hire Me
         </a>
       </div>
     </>

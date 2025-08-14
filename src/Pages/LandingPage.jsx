@@ -19,6 +19,9 @@ const LandingPage = () => {
       <section id="timeline">
         <Timeline />
       </section>
+      <section id="contact">
+        <GetInTouch />
+      </section>
       <section id="timeline">
         <Footer />
       </section>
